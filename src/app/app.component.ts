@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-root', //forma en la que llamamos el componente
+  templateUrl: './app.component.html', //rita del html
+  styleUrls: ['./app.component.css'] //ruta del estilo, puede tener varios
 })
 export class AppComponent {
-  title = 'Angular';
+  title = 'HOLA MUNDO EN ANGULAR';
+  subtitle = "segundo mensaje interpolado"
 }

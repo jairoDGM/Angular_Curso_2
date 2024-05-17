@@ -1,0 +1,17 @@
+<h1>Hola Mundo en Angular</h1>
+<h3>componente desde "Padre"</h3>
+<h4>Mensaje recibido desde el hijo: {{reciboMensaje}}</h4>
+
+<h2>Contador:</h2>
+<p>{{valorContador}}</p> <!--aca estamos bindeando la variable-->
+<button (click)="incrementar()">Incrementar</button> <!--aca estamos escuchando a travez de eventos-->
+<button (click)="decrementar()">Decrementar</button>
+
+
+<!--si nos damos cuenta tenemos un componente dentro de otro componente-->
+<app-hijo [recibeHijo]="mensajePadre" (mensajeDesdeHijo)="recibirMensaje($event)" (agregarMensajeHijo)="agregarMensaje()" (quitarMensajeHijo)="quitarMensaje()"></app-hijo>
+
+<h1>Ejercicio de Services y Dependencias</h1>
+<h3>{{hermanoGrande | miPipePersonalizado}}</h3>
+<button type="button" (click)="saludar()">Saludar</button>
+<button type="button" (click)="preguntar()">Preguntar</button>
